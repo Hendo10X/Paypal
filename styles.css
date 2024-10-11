@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .login, .auth-buttons .signup {
+  padding: 8px 16px;
+  border: 2px solid #00457C;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.auth-buttons .login {
+  color: #00457C;
+}
+
+.auth-buttons .signup {
+  background-color: #00457C;
+  color: #fff;
+}
+
+.auth-buttons .signup:hover {
+  background-color: #003366;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  color: #002C6D;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.qr-code {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 431px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    margin-bottom: 0;
+  }
+
+  nav ul {
+    margin-bottom: 0;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 60px 0;
+    text-align: left;
+  }
+
+  .hero-content {
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 56px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .qr-code {
+    width: 120px;
+  }
+
+  .hero-image img {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-content h1 {
+    font-size: 76px;
+  }
+}
